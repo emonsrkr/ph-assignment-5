@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- font awesome cdn -->
+<script src="https://kit.fontawesome.com/9ffb2db938.js" crossorigin="anonymous"></script>
+
+ <!-- tailwind cdn -->
+ <script src="https://cdn.tailwindcss.com"></script>
+
+ <script>
+     tailwind.config = {
+         theme: {
+             extend: {
+                 colors: {
+                     clifford: '#da373d',
+                 }
+             }
+         }
+     }
+ </script>
+
+ <!-- daisyui cdn  -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+ <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <h1 class="text-6xl mb-5">Important FAQ ?</h1>
+
+    <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+          <div class="collapse-content">
+            <p>The Document Object Model (DOM) is a programming interface for HTML and XML documents, representing the structure of a webpage as a tree of objects. Each part of the document (elements, attributes, text) is a node in this tree, allowing languages like JavaScript to access and manipulate the document dynamically. With the DOM, developers can modify content, structure, and styles of a webpage in real time, enabling interactive features such as updating text, adding elements, or responding to user events without reloading the page.
+                 </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+          <div class="collapse-content">
+            <p>To select an element from the DOM, you can use JavaScript methods like getElementById() to select by ID, getElementsByClassName() or getElementsByTagName() to select by class or tag name, and querySelector() or querySelectorAll() to select using CSS-style selectors. These methods allow developers to target specific elements for manipulation, such as changing text or styles dynamically.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+          <div class="collapse-content">
+            <p>Event delegation in the context of the DOM is a technique where you attach a single event listener to a parent element to manage events for multiple child elements. Instead of adding individual listeners to each child, the event listener on the parent captures events as they "bubble up" from the child elements.
+
+                This is useful because it improves performance by reducing the number of event listeners, especially in cases with many child elements or dynamically added elements. It also simplifies code, as you can manage all related events from a single listener on the parent element.
+                </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>To manipulate an element's attributes in the DOM, you can use setAttribute(), getAttribute(), and removeAttribute() to add, retrieve, or remove attributes like src or href. For styles, you can modify an element’s appearance using the style property, such as element.style.color = "red", or set multiple styles at once with style.cssText. This allows for dynamic updates to an element's attributes and styles in response to interactions or conditions.</p>
+            </div>
+          </div>
+      </div>
+    
+</body>
+</html>
