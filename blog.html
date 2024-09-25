@@ -28,8 +28,19 @@
 
 </head>
 <body>
-
-    <h1 class="text-6xl mb-5">Important FAQ ?</h1>
+  <div class="bg-yellow-50 flex justify-between px-10 py-5">
+    <a href="./index.html" class="btn btn-warning">Home</a>
+    <div class="flex gap-2 items-center">
+      <img src="./assets/logo.png" alt="" />
+      <p class="text-xl font-bold">Donate Bangladesh</p>
+    </div>
+    <div class="flex items-center gap-2 text-xl font-bold">
+      <img src="./assets/coin.png" alt="" />
+      <h1><span id="totaltaka"></span> BDT</h1>
+    </div>
+  </div>
+  <div class=" mx-20">
+   <div class=" flex items-center gap-4"><h1 class="text-6xl mb-5">Important FAQ </h1><img class="w-14 h-14" src="https://static.thenounproject.com/png/4962506-200.png" alt=""></div> 
 
     <div class="join join-vertical w-full">
         <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -66,5 +77,13 @@
           </div>
       </div>
     
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const totalTaka = document.getElementById("totaltaka");
+      totalTaka.textContent = `${parseFloat(localStorage.getItem("totalMoney")) || 0}`;
+    });
+  </script>
+  
 </body>
 </html>
